@@ -10,6 +10,6 @@ public class AnonymApplication{
 				System.out.println("I am Show from Anonymous class");
 			}
 		};
-		ab.show();
+		ab.show(); //I am Show from Anonymous class
 	}
 }
