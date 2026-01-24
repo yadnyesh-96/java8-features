@@ -19,7 +19,7 @@ public class SquareApp{
 		*/
 		
 		Square sq = (int no) ->{ return no*no;};
-		int res = sq.get_Square(5);
+		int res = sq.get_Square(6);
 		System.out.println("Square is : "+res);
 	}
 }
