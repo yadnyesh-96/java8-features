@@ -26,8 +26,10 @@ public class SquareApp{
 		System.out.println("Square is : "+res); // Square is : 36
 		*/
 		
+		/* Method = III ( Using Lambda Expression Format )
 		Square sq = (int no) -> no*no;
 		int res = sq.get_Square(7);
 		System.out.println("Square is : "+res); // Square is : 49
+		*/
 	}
 }
