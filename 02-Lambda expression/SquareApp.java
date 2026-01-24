@@ -38,5 +38,7 @@ public class SquareApp{
 			System.out.println("Square is : "+res); // Square is : 64
 		}
 		*/
+		
+		System.out.println("Square is : "+((Square)(int no)-> no*no).get_Square(9)); 	// Square is : 81
 	}
 }
