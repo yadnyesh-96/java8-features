@@ -5,6 +5,9 @@ interface Square{
 
 public class SquareApp{
 	public static void main(String x[]){
+		
+		/* Method = I ( Anonymous inner class )
+		
 		Square sq=new Square(){
 			public int get_Square(int no){
 				return no*no;
@@ -12,7 +15,9 @@ public class SquareApp{
 		};
 		
 		int res = sq.get_Square(5);
-		System.out.println("Square is : "+res);
-
+		System.out.println("Square is : "+res); // Square is : 25
+		*/
+		
+		
 	}
 }
