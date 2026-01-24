@@ -34,5 +34,34 @@ public class Threading_LambdaExpAPP{
 		Thread t =new Thread(rn);
 		t.start();
 		*/
+		
+		/*	Method - III
+		
+		Thread t =new Thread( ()->{
+			try{
+					for(int i=1; i<=5; i++){
+						System.out.println("I = "+i);
+						Thread.sleep(1000);
+					}
+				}catch(Exception ex){
+					System.out.println("Error is : "+ex);
+				}
+		});
+		t.start();
+		*/
+		
+		/*	Method - IV
+		
+		new Thread(()->{
+			try{
+					for(int i=1; i<=5; i++){
+						System.out.println("I = "+i);
+						Thread.sleep(1000);
+					}
+				}catch(Exception ex){
+					System.out.println("Error is : "+ex);
+				}
+		}).start();
+		*/
 	}
 }
