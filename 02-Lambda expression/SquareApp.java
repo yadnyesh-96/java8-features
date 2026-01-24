@@ -1,6 +1,6 @@
 @FunctionalInterface
 interface Square{
-	int get_Square(int no); // public abstract void 
+	int get_Square(int no); // public abstract int get_Square();
 }
 
 public class SquareApp{
