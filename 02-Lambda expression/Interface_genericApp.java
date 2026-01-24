@@ -30,5 +30,9 @@ public class Interface_genericApp{
 		float res = sq.get_Square(7.5f);
 		System.out.println("Square is : "+res); // Square is : 56.25
 		*/
+		
+		// Method = IV ( Using Lambda Expression Format ) with generics
+		Float res = ((Square<Float>)(Float no)->no*no).get_Square(8.5f);
+		System.out.println("Square is : "+res);	// Square is : 72.25
 	}
 }
