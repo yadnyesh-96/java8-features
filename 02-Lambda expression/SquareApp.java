@@ -18,6 +18,8 @@ public class SquareApp{
 		System.out.println("Square is : "+res); // Square is : 25
 		*/
 		
-		
+		Square sq = (int no) ->{ return no*no;};
+		int res = sq.get_Square(5);
+		System.out.println("Square is : "+res);
 	}
 }
