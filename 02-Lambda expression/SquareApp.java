@@ -32,9 +32,11 @@ public class SquareApp{
 		System.out.println("Square is : "+res); // Square is : 49
 		*/
 		
-		{
+		/*
+		{  Method = IV ( Using Lambda Expression Format )
 			int res = ((Square)(int no)->no*no).get_Square(8); 
 			System.out.println("Square is : "+res); // Square is : 64
 		}
+		*/
 	}
 }
