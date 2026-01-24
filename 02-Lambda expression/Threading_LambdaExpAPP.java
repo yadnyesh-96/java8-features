@@ -50,7 +50,7 @@ public class Threading_LambdaExpAPP{
 		t.start();
 		*/
 		
-		/*	Method - IV
+		//	Method - IV
 		
 		new Thread(()->{
 			try{
@@ -62,6 +62,6 @@ public class Threading_LambdaExpAPP{
 					System.out.println("Error is : "+ex);
 				}
 		}).start();
-		*/
+		
 	}
 }
