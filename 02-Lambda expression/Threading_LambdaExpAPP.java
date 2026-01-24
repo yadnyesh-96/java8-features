@@ -1,6 +1,8 @@
 
 public class Threading_LambdaExpAPP{
 	public static void main(String x[]){
+		/*	Method - I
+		
 		Runnable rn = new Runnable(){
 			public void run(){
 				try{
@@ -15,5 +17,22 @@ public class Threading_LambdaExpAPP{
 		};
 		Thread t =new Thread(rn);
 		t.start();		
+		*/
+		
+		/*	Method - II
+		
+		Runnable rn = ()->{
+			try{
+					for(int i=1; i<=5; i++){
+						System.out.println("I = "+i);
+						Thread.sleep(1000);
+					}
+				}catch(Exception ex){
+					System.out.println("Error is : "+ex);
+				}	
+		};
+		Thread t =new Thread(rn);
+		t.start();
+		*/
 	}
 }
