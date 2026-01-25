@@ -17,7 +17,5 @@ public class ConsumerInterfaceApp{
 		cm.accept(200);
 		*/
 		
-		System.out.println(((Consumer<Integer>)(Integer val)->System.out.println(val)).accept(300));
-		
 	}
 }
