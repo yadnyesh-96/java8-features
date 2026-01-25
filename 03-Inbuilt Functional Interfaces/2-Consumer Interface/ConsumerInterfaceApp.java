@@ -1,5 +1,5 @@
 
-java.util.function.*;
+import java.util.function.*;
 public class ConsumerInterfaceApp{
 	public static void main(String x[]){
 		
