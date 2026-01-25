@@ -1,16 +1,14 @@
 
----
 
-```markdown
 # Consumer Interface in Java 8
 
 The **Consumer Interface** is a built-in functional interface introduced in Java 8 under the package:
 
-```
+
 
 java.util.function
 
-````
+
 
 It is mainly used when we want to perform an operation on data without returning any result.
 
