@@ -1,17 +1,14 @@
 
 
----
-
-```markdown
 # Runnable Interface in Java 8
 
 `Runnable` is a built-in **functional interface** present in:
 
-```
+
 
 java.lang
 
-````
+
 
 It is mainly used for **multithreading** in Java.
 
