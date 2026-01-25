@@ -2,12 +2,11 @@
 
 ---
 
-```markdown
+
 # Inbuilt Functional Interfaces in Java 8
 
 Java 8 introduced several inbuilt functional interfaces under the package:
 
-```
 
 java.util.function
 
