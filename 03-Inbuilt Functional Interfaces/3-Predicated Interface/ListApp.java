@@ -6,6 +6,8 @@ import java.util.*;
 import java.util.function.*;
 public class ListApp{
 	public static void main(String x[]){
+		
+		/*
 		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
 		Predicate<Integer> p1 = new Predicate<Integer>(){
 			public boolean test(Integer val){
@@ -18,6 +20,17 @@ public class ListApp{
 					System.out.println(val);
 				}
 			}	
+		};
+		ls.forEach(c);
+		*/
+		
+		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
+		Predicate<Integer> p1 =(Integer val)->val%2==0;
+		
+		Consumer<Integer> c = (Integer val)->
+				{if(p1.test(val)){
+					System.out.println(val);
+				}	
 		};
 		ls.forEach(c);
 	}
