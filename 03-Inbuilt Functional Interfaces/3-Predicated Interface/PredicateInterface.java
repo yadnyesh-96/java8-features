@@ -3,7 +3,7 @@ import java.util.function.*;
 public class PredicateInterface{
 	public static void main(String x[]){
 		
-		Predicate<Integer> p1 =(Integer valFirst)->return valFirst>=10;
+		Predicate<Integer> p1 =(Integer valFirst)->valFirst>=10;
 		
 		Predicate<Integer> p2 =(Integer valSecond)->return valSecond<=20;
 		
