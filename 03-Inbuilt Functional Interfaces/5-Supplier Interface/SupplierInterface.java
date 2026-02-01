@@ -17,5 +17,8 @@ public class SupplierInterface{
 		Date sysDate= s.get();
 		System.out.println(sysDate);
 		*/
+		
+		Date sysDate= ((Supplier<Date>)()-> new Date()).get();
+		System.out.println(sysDate);
 	}
 }
