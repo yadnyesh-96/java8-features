@@ -18,10 +18,15 @@ public class FunctionInterfaceAPP{
 		Integer res = f.apply(10);
 		System.out.println("Square is :"+res);
 		*/
-		
+		/*
 		Function<Integer,Integer> f =(Integer val)->val*val;
 		
 		Integer res = f.apply(10);
+		System.out.println("Square is :"+res);
+		*/
+		
+		
+		Integer res = ((Function<Integer,Integer>)(Integer val)->val*val).apply(10);
 		System.out.println("Square is :"+res);
 	}
 }
