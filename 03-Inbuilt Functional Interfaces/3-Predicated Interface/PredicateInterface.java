@@ -9,7 +9,7 @@ public class PredicateInterface{
 			}
 		};
 		
-		Predicate<Integer> p2 = new Predicare<Integer>(){
+		Predicate<Integer> p2 = new Predicate<Integer>(){
 			public boolean test(Integer valSeacond){
 				return valSecond<=20;
 			}
