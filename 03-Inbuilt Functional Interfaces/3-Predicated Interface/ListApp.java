@@ -23,13 +23,23 @@ public class ListApp{
 		};
 		ls.forEach(c);
 		*/
-		
+		/*
 		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
 		Predicate<Integer> p1 =(Integer val)->val%2==0;
 		
 		Consumer<Integer> c = (Integer val)->
 				{if(p1.test(val)){
 					System.out.println(val);
+				}	
+		};
+		ls.forEach(c);
+		*/
+		
+		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
+		
+		Consumer<Integer> c = (Integer val1)->
+				{if(((Predicate<Integer>)(Integer val)->val%2==0).test(val1)){
+					System.out.println(val1);
 				}	
 		};
 		ls.forEach(c);
