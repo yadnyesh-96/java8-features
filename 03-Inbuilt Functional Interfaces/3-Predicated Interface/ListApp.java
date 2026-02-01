@@ -2,8 +2,8 @@
 Example: WAP to create Collection and store 10 values in it and find only even values from collection 
 */
 
-java.util.*;
-java.util.function.*;
+import java.util.*;
+import java.util.function.*;
 public class ListApp{
 	public static void main(String x[]){
 		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
