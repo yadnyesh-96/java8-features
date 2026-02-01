@@ -9,10 +9,13 @@ class PredicateInterfaceAPP{
 			}
 		};
 		*/
-		
+		/*Method -II
 		Predicate<Integer> p=(Integer val)->{
 				return val%2==0?true:false;
 		};
+		*/
+		
+		
 		boolean res=p.test(10);
 		if(res){
 			System.out.println("Even Number");
