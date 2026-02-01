@@ -1,5 +1,5 @@
 
-inport java.util.*;
+import java.util.*;
 class PredicateInterfaceAPP{
 	public static void main(String x[]){
 		
