@@ -5,11 +5,7 @@ public class PredicateInterface{
 		
 		Predicate<Integer> p1 =(Integer valFirst)->return valFirst>=10;
 		
-		Predicate<Integer> p2 = new Predicate<Integer>(){
-			public boolean test(Integer valSecond){
-				return valSecond<=20;
-			}
-		};
+		Predicate<Integer> p2 =(Integer valSecond)->return valSecond<=20;
 		
 		Predicate<Integer> p3 = p1.and(p2);
 		boolean res = p3.test(12);
