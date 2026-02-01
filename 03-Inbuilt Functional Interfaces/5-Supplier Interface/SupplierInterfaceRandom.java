@@ -11,7 +11,15 @@ public class SupplierInterfaceRandom{
 		};
 		System.out.println(s.get());
 		*/
+		/*
+		Supplier<Integer> s = ()->new Random().nextInt(100);
+
+		System.out.println(s.get());
+		*/
 		
+		
+
+		System.out.println(((Supplier<Integer>)()->new Random().nextInt(100)).get());
 		
 	}
 }	
