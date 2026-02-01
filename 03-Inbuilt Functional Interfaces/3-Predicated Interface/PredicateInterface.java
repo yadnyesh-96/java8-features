@@ -37,9 +37,9 @@ public class PredicateInterface{
 		}
 		*/
 		
-		Predicate<Integer> p1 = (Integer valFirst)->valFirst>=10;
 		
-		Predicate<Integer> p3 = p1.and(((Predicate<Integer>)(Integer valSecond)->valSecond<=20));
+		
+		Predicate<Integer> p3 = ((Predicate<Integer>)(Integer valFirst)->valFirst>=10).and(((Predicate<Integer>)(Integer valSecond)->valSecond<=20));
 		boolean res = p3.test(12);
 		if(res){
 			System.out.println("Value is greater than 10 and less than 20");
