@@ -1,0 +1,24 @@
+/*
+Example: WAP to create Collection and store 10 values in it and find only even values from collection 
+*/
+
+java.util.*;
+java.util.function.*;
+public class ListApp{
+	public static void main(String x[]){
+		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
+		Predicate<Integer> p1 = new Predicate<Integer>(){
+			public boolean test(Integer val){
+				return val%2==0;
+			}
+		};
+		Consumer<Integer> c = new Consumer<Integer>(){
+			public void accept(Integer val){
+				if(p1.test(val)){
+					System.out.println(val);
+				}
+			}	
+		};
+		ls.forEach(c);
+	}
+}
