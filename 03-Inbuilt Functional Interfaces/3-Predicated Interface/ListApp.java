@@ -35,6 +35,7 @@ public class ListApp{
 		ls.forEach(c);
 		*/
 		
+		/*
 		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
 		
 		Consumer<Integer> c = (Integer val1)->
@@ -43,5 +44,16 @@ public class ListApp{
 				}	
 		};
 		ls.forEach(c);
+		*/
+		
+		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
+		
+		ls.forEach((Integer val1)->
+				{if(((Predicate<Integer>)(Integer val)->val%2==0).test(val1)){
+					System.out.println(val1);
+				}	
+		});
+		
+		
 	}
 }
