@@ -15,7 +15,7 @@ class PredicateInterfaceAPP{
 		};
 		*/
 		
-		
+		Predicate<Integer> p = (Integer val) val%2==0?true:false;
 		boolean res=p.test(10);
 		if(res){
 			System.out.println("Even Number");
