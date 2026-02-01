@@ -14,13 +14,25 @@ class PredicateInterfaceAPP{
 				return val%2==0?true:false;
 		};
 		*/
-		
+		/*Method - III
 		Predicate<Integer> p = (Integer val)->val%2==0?true:false;
-		boolean res=p.test(10);
-		if(res){
+		*/
+		/*Method -IV
+		boolean res=((Predicate<Integer>)(Integer val)->val%2==0?true:false).test(10);
+		*/
+		
+		/*Method -V
+		if(((Predicate<Integer>)(Integer val)->val%2==0?true:false).test(10)){
 			System.out.println("Even Number");
 		}else{
 			System.out.println("Odd Number");
 		}
+		*/
+		/*
+		String msg = ((Predicate<Integer>)(Integer val)->val%2==0?true:false).test(11)?"EVEN":"ODD";
+		System.out.println(msg);
+		*/
+		
+		System.out.println(((Predicate<Integer>)(Integer val)->val%2==0?true:false).test(11)?"EVEN":"ODD");
 	}
 }
