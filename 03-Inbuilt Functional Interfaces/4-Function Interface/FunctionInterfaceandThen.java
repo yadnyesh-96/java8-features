@@ -29,9 +29,13 @@ public class FunctionInterfaceandThen{
 		*/
 		
 		
-		
+		/*
 		Function<Integer,Integer> f2 = ((Function<Integer,Integer>)(Integer val)->val*val).andThen(((Function<Integer,Integer>)(Integer res)->res*100));
 		Integer result = f2.apply(10);
+		System.out.println("Final Result is:"+result);
+		*/
+		
+		Integer result = ((Function<Integer,Integer>)(Integer val)->val*val).andThen(((Function<Integer,Integer>)(Integer res)->res*100)).apply(10);
 		System.out.println("Final Result is:"+result);
 	}
 }
