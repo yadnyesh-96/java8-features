@@ -12,7 +12,7 @@ public class FunctionInterfacecompose{
 		Function<Integer,Integer> f = new Function<Integer,Integer>(){
 			public Integer apply(Integer val){
 				++count;
-				System.out.println("Calling count from First");
+				System.out.println("Calling count from First "+count);
 				return val*val;
 			}
 		};
@@ -20,12 +20,12 @@ public class FunctionInterfacecompose{
 		Function<Integer,Integer> f1 = new Function<Integer,Integer>(){
 			public Integer apply(Integer res){
 				++count;
-				System.out.println("Calling Count from Second"+count);
+				System.out.println("Calling Count from Second "+count);
 				return res*100;
 			}
 		};
 		
-		Function<Integer,Integer> f2 = f.compose(f2);
+		Function<Integer,Integer> f2 = f.compose(f1);
 		Integer result = f2.apply(10);
 		System.out.println("Final result is "+result);
 	}
