@@ -13,10 +13,7 @@ public class SupplierInterface{
 		System.out.println(sysDate);
 		*/
 		
-		Supplier<Date> s = ()->get(){
-					return new Date();
-				}
-		};
+		Supplier<Date> s = ()-> new Date();
 		Date sysDate= s.get();
 		System.out.println(sysDate);
 	}
