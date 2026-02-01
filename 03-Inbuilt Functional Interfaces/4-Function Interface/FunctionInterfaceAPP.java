@@ -25,8 +25,11 @@ public class FunctionInterfaceAPP{
 		System.out.println("Square is :"+res);
 		*/
 		
-		
+		/*
 		Integer res = ((Function<Integer,Integer>)(Integer val)->val*val).apply(10);
 		System.out.println("Square is :"+res);
+		*/
+		
+		System.out.println("Square is :"+((Function<Integer,Integer>)(Integer val)->val*val).apply(10));
 	}
 }
