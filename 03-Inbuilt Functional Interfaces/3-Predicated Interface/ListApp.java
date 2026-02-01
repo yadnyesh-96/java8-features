@@ -25,7 +25,7 @@ public class ListApp{
 		*/
 		
 		List<Integer> ls =List.of(1,2,4,6,7,9,12,14,16,19);
-		((Predicate<Integer>)(Integer val)->val%2==0);
+		Predicate<Integer> p1 =(Integer val)->val%2==0;
 		
 		Consumer<Integer> c = (Integer val)->
 				{if(p1.test(val)){
