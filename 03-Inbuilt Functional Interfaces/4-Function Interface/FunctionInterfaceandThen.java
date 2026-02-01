@@ -18,12 +18,19 @@ public class FunctionInterfaceandThen{
 		Integer result = f2.apply(10);
 		System.out.println("Final Result is:"+result);
 		*/
-		
+		/*
 		Function<Integer,Integer> f =(Integer val)->val*val;
 		
 		Function<Integer,Integer> f1 =(Integer res)->res*100;
 		
 		Function<Integer,Integer> f2 = f.andThen(f1);
+		Integer result = f2.apply(10);
+		System.out.println("Final Result is:"+result);
+		*/
+		
+		
+		
+		Function<Integer,Integer> f2 = ((Function<Integer,Integer>)(Integer val)->val*val).andThen(((Function<Integer,Integer>)(Integer res)->res*100));
 		Integer result = f2.apply(10);
 		System.out.println("Final Result is:"+result);
 	}
