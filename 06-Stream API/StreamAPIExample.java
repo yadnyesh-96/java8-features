@@ -51,6 +51,7 @@ public class StreamAPIExample{
 		Employee e4=new Employee(13,"MNO",17500);
 		Employee e5=new Employee(14,"SUV",14920);
 		
+		/*
 		List<Employee> ls =List.of(e1,e2,e3,e4,e5);
 		Stream<Employee> s1 = ls.stream();
 		Predicate<Employee> p = new Predicate<Employee>(){
@@ -60,6 +61,13 @@ public class StreamAPIExample{
 		};
 		Stream<Employee> s2 = s1.filter(p);
 		s2.forEach((e)->System.out.println(e.getId()+"\t"+e.getName()+"\t"+e.getSal()));
+		*/		
 		
+
+		 List.of(e1,e2,e3,e4,e5).
+			stream().
+				filter(((Predicate<Employee>)(Employee v)->v.
+					getSal()>10000)).
+						forEach((e)->System.out.println(e.getId()+"\t"+e.getName()+"\t"+e.getSal()));
 	}
 }
