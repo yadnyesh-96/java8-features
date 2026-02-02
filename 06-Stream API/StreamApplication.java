@@ -8,7 +8,7 @@ public class StreamApplication{
 		List<Integer>list=List.of(10,20,30,40,50);
 		Stream<Integer> s = list.stream();
 		Function<Integer,Integer> s1 = new Function<Integer,Integer>(){
-				public Integer apply(Interger v){
+				public Integer apply(Integer v){
 					return v*v;
 				}
 		};		
