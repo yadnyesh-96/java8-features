@@ -27,10 +27,18 @@ public class StreamFilterApplication{
 		s2.forEach((val)->System.out.println(val));
 		*/
 		
+		/*
 		Stream<Integer> s1 = List.of(10,11,20,42,15,16,17).stream();
-		
-
+	
 		Stream<Integer> s2=s1.filter((Integer val)->val%2==0);
 		s2.forEach((val)->System.out.println(val));
+		*/
+		
+		Stream<Integer> s1 = List.of(10,11,20,42,15,16,17).stream();
+	
+		 List.of(10,11,20,42,15,16,17).
+			stream().
+				filter((Integer val)->val%2==0).
+					forEach((val)->System.out.println(val));
 	}
 }
