@@ -20,5 +20,13 @@ public class StreamApplication{
 		};
 		s2.forEach(c);
 		*/
+		
+		List<Integer>list=List.of(10,20,30,40,50);
+		Stream<Integer> s = list.stream();
+		Function<Integer,Integer> s1 =(Integer v)-> v*v;
+		
+		Stream<Integer>s2=s.map(s1);
+		Consumer<Integer> c = (Integer v)->System.out.println(v);
+		s2.forEach(c);
 	}
 }
