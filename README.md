@@ -111,12 +111,6 @@ After completing this repository, you will:
 
 ---
 
-## 📌 Author
-
-**Yadnynesh Dhangar**  
-E&TC Engineer | Java & Embedded Systems Learner
-
----
 
 ## ⭐ Note
 
