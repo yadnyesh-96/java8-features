@@ -21,6 +21,7 @@ public class StreamApplication{
 		s2.forEach(c);
 		*/
 		
+		/*
 		List<Integer>list=List.of(10,20,30,40,50);
 		Stream<Integer> s = list.stream();
 		Function<Integer,Integer> s1 =(Integer v)-> v*v;
@@ -28,5 +29,12 @@ public class StreamApplication{
 		Stream<Integer>s2=s.map(s1);
 		Consumer<Integer> c = (Integer v)->System.out.println(v);
 		s2.forEach(c);
+		*/
+		
+		/*
+		Stream<Integer>s2=List.of(10,20,30,40,50).stream().map(((Function<Integer,Integer>)(Integer v)-> v*v));
+		Consumer<Integer> c = (Integer v)->System.out.println(v);
+		s2.forEach(c);
+		*/
 	}
 }
