@@ -31,10 +31,11 @@ public class StreamApplication{
 		s2.forEach(c);
 		*/
 		
-		/*
-		Stream<Integer>s2=List.of(10,20,30,40,50).stream().map(((Function<Integer,Integer>)(Integer v)-> v*v));
+		/*	Stream<Integer>s2=List.of(10,20,30,40,50).stream().map(((Function<Integer,Integer>)(Integer v)-> v*v));
 		Consumer<Integer> c = (Integer v)->System.out.println(v);
 		s2.forEach(c);
 		*/
+		
+		List.of(10,20,30,40,50).stream().map(((Function<Integer,Integer>)(Integer v)-> v*v)).forEach((Integer v)->System.out.println(v));
 	}
 }
