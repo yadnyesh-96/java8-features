@@ -13,7 +13,7 @@ public class StreamApplication{
 				}
 		};		
 		
-		Stream<Integer>s2=s1.map(s1);
+		Stream<Integer>s2=s.map(s1);
 		Consumer<Integer> c = new Consumer<Integer>(){
 			public void accept(Integer v){
 				System.out.println(v);
